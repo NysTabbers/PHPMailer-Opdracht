@@ -33,8 +33,8 @@ try {
 
     
     //Recipients
-    $mail->setFrom('dingus@twiserver.nl', 'PHP Mailer');
-    $mail->addAddress('izaak.kuipers@gmail.com');     //Add a recipient
+    $mail->setFrom('<from email>', 'PHP Mailer');
+    $mail->addAddress('<recipient goes here>');     //Add a recipient
     
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
