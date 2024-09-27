@@ -47,6 +47,8 @@ try {
 
         $inhoud = $_POST['inhoud'];
 
+        $ccEmail = "nystabbers7@gmail.com";
+
         //Recipients
         $mail->setFrom('nystabbers7@gmail.com', 'ROC Tilburg');
         $mail->addAddress($email);     //Add a recipient
@@ -56,6 +58,7 @@ try {
         $mail->Subject = $titel;
         $mail->Body = $inhoud;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->addCC($ccEmail);
 
         $mail->send();
         echo 'Message has been sent';
